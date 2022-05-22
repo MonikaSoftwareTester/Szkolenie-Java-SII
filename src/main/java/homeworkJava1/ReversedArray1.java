@@ -1,4 +1,4 @@
-package zadania1;
+package homeworkJava1;
 
 public class ReversedArray1 {
 
