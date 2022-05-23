@@ -17,6 +17,7 @@ public class Ex1 extends TestBase{
 
         WebElement popularOption = driver.findElement(By.xpath("//*[@id='home-page-tabs']/li[1]/a"));
 
+        //tutaj nie do końca wiem, czy tak może być, jeśli chodzi o sprawdzenie, jaka opcja jest wybrana
         if(popularOption.isEnabled()){
             System.out.println("Wybrana opcja to 'Popular'");
         }else{
@@ -27,6 +28,7 @@ public class Ex1 extends TestBase{
         List<WebElement> prices = driver.findElements(By.xpath("//*[@id='homefeatured']/li/div/div/div/span[@itemprop='price']"));
 
         Assert.assertTrue(prices.size() == 7);
+
         System.out.println("Ilość cen produktów na stronie: " + prices.size());
 
     }

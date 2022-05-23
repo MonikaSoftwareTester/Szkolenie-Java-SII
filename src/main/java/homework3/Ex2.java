@@ -35,7 +35,10 @@ public class Ex2 extends TestBase{
 
         Assert.assertEquals(accountName.getText(), "Monika Wieczorek");
 
+        System.out.println("Imię i nazwisko użytkownika to: " + accountName.getText());
+
     }
+    //tę metodę znalazłam w internecie, pewnie można to zrobić w jakiś inny sposób, ale działa ;)
     public String generateEmail(int length) {
 
         String allowedChars = "abcdefghijklmnoprqstuwxyz" + "1234567890" + "_-.";
